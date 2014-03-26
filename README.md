@@ -9,7 +9,7 @@ Interesting concepts:
 - ideally drl should not be compiled in each call (init method in RuleService should be called only upon db change).
 
 How to run:
-1. modify scratchpad/scratchpad-model/src/main/resources/META-INF/spring/database.properties
-2. execute sql (create db, tables and test data) scratchpad/scratchpad-drools/src/main/resources/mortgage.sql
-3. mvn clean install -DskipTests=true
-4. scratchpad/scratchpad-drools/target$ java -jar scratchpad-drools-0.0.1-SNAPSHOT-standalone.jar
+  1. modify scratchpad/scratchpad-model/src/main/resources/META-INF/spring/database.properties
+  2. execute sql (create db, tables and test data) scratchpad/scratchpad-drools/src/main/resources/mortgage.sql
+  3. mvn clean install -DskipTests=true
+  4. scratchpad/scratchpad-drools/target$ java -jar scratchpad-drools-0.0.1-SNAPSHOT-standalone.jar
