@@ -1,0 +1,22 @@
+template header
+
+rule_condition
+rule_consequence
+
+package com.magaton.scratchpad.drools;
+
+dialect "mvel"
+
+global com.magaton.scratchpad.drools.MortgageService mortgageService;
+
+template "mortgage"
+
+rule "mortgage_@{row.rowNumber}"
+no-loop
+when
+  $mortgage: com.magaton.scratchpad.model.Mortgage(@{rule_condition})
+then
+  @{rule_consequence}
+end
+
+end template

@@ -1,0 +1,35 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-25 14:37:46
+project --topLevelPackage com.magaton.scratchpad.model
+jpa setup --provider HIBERNATE --database MYSQL 
+// [failed] database reverse engineer --schema mortgage_db
+// [failed] database reverse engineer --schema mortgage_db
+// [failed] database reverse engineer --schema mortgage_db
+// [failed] database reverse engineer --schema mortgage_db
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-25 15:04:23
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-25 15:04:28
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+// [failed] database introspect --schema mortgage_db
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+database introspect --schema mortgage_db
+database reverse engineer --schema mortgage_db
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2014-03-26 00:09:31
+project --topLevelPackage com.magaton.scratchpad.model
+jpa setup --provider HIBERNATE --database MYSQL 
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+// [failed] database reverse engineer --schema mortgage_db
+database reverse engineer --schema mortgage_db
+quit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2014-03-26 00:15:34
